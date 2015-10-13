@@ -1,6 +1,10 @@
 2500 words
 
 UK-wide high street-based retail business with an internet sales presence
+	PCI-DSS
+	DPA 98
+	EU sales
+	Data Collection
 
 Management Brief briefing report to management of a business on the implications of the implementation of data protection in the UK
 
@@ -28,3 +32,7 @@ Should cover:
 4) Discussion and analysis - including an overview of how data protection law has been applied in the sector, the detailed evaluation of impact of data protection law on the sector, implications for security policies and possible future developments in the area.
 5) Conclusions and limitations of work - The limitations section should include consideration of the effectiveness of the research approach you used.
 6) References - APA style, in-line citations as (Smith, 2009)
+
+Data Protection Act 1998 (c. 29). [Electronic version] Retrieved 11th October 2014 from: http://www.legislation.gov.uk/ukpga/1998/29 
+
+ICO, Information Commissioner’s Office. (No date). Key definitions of the Data Protection Act. Retrieved 11th October 2014 from: http://ico.org.uk/for_organisations 
