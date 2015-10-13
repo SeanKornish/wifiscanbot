@@ -1,0 +1,30 @@
+2500 words
+
+UK-wide high street-based retail business with an internet sales presence
+
+Management Brief briefing report to management of a business on the implications of the implementation of data protection in the UK
+
+EU, UK, and personal data protection law
+Data Protection Act 1998
+
+Learning Objectives
+	LO1: Demonstrate an understanding of the roles and responsibilities of the professionals involved, including practical application of codes of practice/ethics.
+	LO2: Review and critically appraise relevant laws and relevant standards, their interrelationships and international trends in their development.
+	LO3: Critically appraise the principles of information security management systems and the roles of risk management, controls and audit in supporting IS governance
+	LO4: Research, examine and evaluate relevant academic literature and real-world situations, identify issues and solutions and make recommendations to management
+	LO5:	Professional present the above in the form of a suitable written report
+
+Should cover:
+- Basic definitions
+- The effectiveness of the enforcement of the laws
+- The implications for security policies that follow from the laws
+- Likely developments in next 5-10 years including the implications of the new Regulation
+- The impact & interaction with other related standards and requirements (eg eCommerce rules)
+
+0) Title Page -  matric number, the module id, word count, the coursework title. Not name
+1) Executive Summary - 150-200 words outlining the contents of the report.
+2) Introduction - Giving an overview of the aim and scope of the paper and making it clear which business sector you have selected.
+3) Background - covering the history and motivations behind data protection law and an overview of the factors relevant to the sector you have chosen
+4) Discussion and analysis - including an overview of how data protection law has been applied in the sector, the detailed evaluation of impact of data protection law on the sector, implications for security policies and possible future developments in the area.
+5) Conclusions and limitations of work - The limitations section should include consideration of the effectiveness of the research approach you used.
+6) References - APA style, in-line citations as (Smith, 2009)
