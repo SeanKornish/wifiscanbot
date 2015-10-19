@@ -1,38 +1,60 @@
-2500 words
+export.gov/SafeHarbour
+Schrems v Data Protection Commissioner
 
-UK-wide high street-based retail business with an internet sales presence
-	PCI-DSS
-	DPA 98
-	EU sales
-	Data Collection
+Binding Corporate Rules (BCRs) Data Protection
+Model Contract Clauses
+Tailor Made contracts approved by the EU Commision 
 
-Management Brief briefing report to management of a business on the implications of the implementation of data protection in the UK
+uk high street retail data protection
+	http://eprints.soton.ac.uk/375492/
+	http://eprints.soton.ac.uk/371883/1/Opinion_Pieces_Southampton_Nov_2014.pdf
+	https://ojs.law.cornell.edu/index.php/joal/article/view/31
+	http://www.tandfonline.com/doi/abs/10.1080/21681376.2015.1016098
+	http://digital-library.theiet.org/content/journals/10.1049/et.2014.0514
 
-EU, UK, and personal data protection law
 Data Protection Act 1998
+	http://www.legislation.gov.uk/ukpga/1998/29/contents
+	https://ico.org.uk/media/1554/determining-what-is-personal-data.pdf
 
-Learning Objectives
-	LO1: Demonstrate an understanding of the roles and responsibilities of the professionals involved, including practical application of codes of practice/ethics.
-	LO2: Review and critically appraise relevant laws and relevant standards, their interrelationships and international trends in their development.
-	LO3: Critically appraise the principles of information security management systems and the roles of risk management, controls and audit in supporting IS governance
-	LO4: Research, examine and evaluate relevant academic literature and real-world situations, identify issues and solutions and make recommendations to management
-	LO5:	Professional present the above in the form of a suitable written report
+uk high street customer data
+	https://www.bba.org.uk/policy/retail/managing-customer-data-and-information/data-protection/bba-position-on-proposed-eu-dp-regulations/
+	http://www.bbc.co.uk/news/business-34127538
 
-Should cover:
-- Basic definitions
-- The effectiveness of the enforcement of the laws
-- The implications for security policies that follow from the laws
-- Likely developments in next 5-10 years including the implications of the new Regulation
-- The impact & interaction with other related standards and requirements (eg eCommerce rules)
+retail sales EU data protection laws
+	http://www.intertic.org/new_site/wp-content/uploads/Policy%20Papers/CCER.pdf
 
-0) Title Page -  matric number, the module id, word count, the coursework title. Not name
-1) Executive Summary - 150-200 words outlining the contents of the report.
-2) Introduction - Giving an overview of the aim and scope of the paper and making it clear which business sector you have selected.
-3) Background - covering the history and motivations behind data protection law and an overview of the factors relevant to the sector you have chosen
-4) Discussion and analysis - including an overview of how data protection law has been applied in the sector, the detailed evaluation of impact of data protection law on the sector, implications for security policies and possible future developments in the area.
-5) Conclusions and limitations of work - The limitations section should include consideration of the effectiveness of the research approach you used.
-6) References - APA style, in-line citations as (Smith, 2009)
+eCommerce data protection
+	http://www.oecd-ilibrary.org/economics/the-internet-economy-regulatory-challenges-and-practices_5jxszm7x2qmr-en
 
-Data Protection Act 1998 (c. 29). [Electronic version] Retrieved 11th October 2014 from: http://www.legislation.gov.uk/ukpga/1998/29 
+Cookie laws
+	???
 
-ICO, Information Commissioner’s Office. (No date). Key definitions of the Data Protection Act. Retrieved 11th October 2014 from: http://ico.org.uk/for_organisations 
+PCI-DSS uk retail
+	http://www.sciencedirect.com/science/article/pii/S136137231270009X
+	http://www.sciencedirect.com/science/article/pii/S1361372314705573
+	http://digital-library.theiet.org/content/journals/10.1049/et.2013.0308
+	http://aladinrc.wrlc.org/handle/1961/15044
+	http://www.inderscienceonline.com/doi/abs/10.1504/IJAUDIT.2014.064316
+
+united kingdom consumer data
+	https://dspace.lboro.ac.uk/dspace-jspui/handle/2134/18623
+
+safe harbour uk internet sales
+	http://heinonline.org/HOL/LandingPage?handle=hein.journals/fjil25&div=14&id=&page=
+	http://www.sciencedirect.com/science/article/pii/S0267364914000302
+	http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2322722
+	http://www.ie-forum.nl/backoffice/uploads/file/IE-Forum_nl%20Robert%20Ashcroft%20and%20Dr%20George%20Barker,%20Is%20copyright%20law%20fit%20for%20purpose%20in%20the%20Internet%20era_%20september%202014.pdf
+
+Future developments
+	Big Data
+	Mobile/contactless payments
+		http://www.sciencedirect.com/science/article/pii/S0267364913000277
+		http://www.sciencedirect.com/science/article/pii/S1361372312701215
+	RFID tagging
+		https://books.google.co.uk/books?hl=en&lr=&id=AAKjAgAAQBAJ&oi=fnd&pg=PP1&dq=uk+high+street+retail+data+protection+rfid&ots=rcPeDHBndy&sig=N-92EldihfwQ9NPx_UuqOK_1dHs#v=onepage&q&f=false
+		http://web.a.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=17416264&AN=89544336&h=8c8mcD6L%2f9YJwFBz3%2fMEdWc051miqplKh2Mo7WIxaFKKvakl01JyGLcRkmgbRHrK1IchvCMqkle2QHshyms8Ow%3d%3d&crl=c&resultNs=AdminWebAuth&resultLocal=ErrCrlNotAuth&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d17416264%26AN%3d89544336
+		http://www.sciencedirect.com/science/article/pii/S0969698914000289
+	GPS geolocation tracking
+		https://litigation-essentials.lexisnexis.com/webcd/app?action=DocumentDisplay&crawlid=1&doctype=cite&docid=82+Geo.+Wash.+L.+Rev.+156&srctype=smi&srcid=3B15&key=d3288fe839cb60743e006e301b15f44d
+		http://link.springer.com/chapter/10.1007/978-1-4302-6146-9_5#page-1
+		http://heinonline.org/HOL/LandingPage?handle=hein.journals/gmlr22&div=18&id=&page=
