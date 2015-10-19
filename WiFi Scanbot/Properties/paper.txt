@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+Data Protection Implications for a UK High Street Business with an Internet Sales Presence
+
+
+Security, Audit, and Compliance
+INF11109 2014-6 TR1 001
+Coursework 1
+
+Matriculation Number: 40185332
+
+Date: 16/10/15
+Word Count: 273
+
+Executive Summary
+150-200 words outlining the contents of the report
+
+Table of Contents
+Executive Summary	2
+Introduction	4
+Background	4
+Discussion and Analysis	4
+Conclusions and Limitations of Work	4
+References	5
+
+
+Introduction
+Giving an overview of the aim and scope of the paper and making it clear which business sector you have selected
+1) Talk about retail businesses, customers and their data. Sales data, inventory. Other concerns for businesses that also operate sales online, international, data cross-over. Lead to UK DPA, EU data protection directives, international laws for internet sales
+2) The notions in the DPA and EU DPD as they relate to retail, safe harbour and the like as they relate to internet sales
+3) The aim of this paper is to discuss the laws that pertain to this business, their implications for working within the laws, their enforcement, and the outcomes of following them or not (punishments)
+
+Background
+Covering the history and motivations behind data protection law and an overview of the factors relevant to the sector you have chosen
+
+Discussion and Analysis
+including an overview of how data protection law has been applied in the sector, the detailed evaluation of impact of data protection law on the sector, implications for security policies and possible future developments in the area
+
+Conclusions and Limitations of Work
+The limitations section should include consideration of the effectiveness of the research approach you used
+
+References
+APA style, in-line citations as (Smith, 2009)
