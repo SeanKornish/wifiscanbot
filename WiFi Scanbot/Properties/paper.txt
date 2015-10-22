@@ -4,7 +4,7 @@ Prior to this directive, the Organisation for Economic Co-operation and Developm
 As a member nation of the EU, businesses operating in the United Kingdom are certainly within the scope of this directive. However, as a directive (as opposed to a regulation), 95/46/EC is open to interpretation by each country in the European Union. All member states had to enact their own laws that would put them in compliance with the directive. The United Kingdom has implemented it's data protection laws in the Data Protection Act of 1998.
 
 United Kingdom's Data Protection Act of 1998
-While some European Union member states copied the EU Data Protection Directive verbatim, the United Kingdom determined it's own interpretation of the directive. This interpretation has been put into law in the form of the Data Protection Act of 1998. 
+While some European Union member states copied the EU Data Protection Directive verbatim, the United Kingdom determined it's own interpretation of the directive. This interpretation has been put into law in the form of the Data Protection Act of 1998. This act replaced an earlier UK law, the Data Protection Act of 1984. In the 1998 version, much of the focus is on the handling and processing of personal data. Personal data, in the scope of this law, is defined as data that can be used to personally identify a living person. This means that anonymised data or data that is grouped together without personal identifiers is out of scope for this law. 
 
 Freedom of Information Act 2000
 The specific need for this and why it pertains to the above.
