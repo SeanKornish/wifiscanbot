@@ -1,51 +1,16 @@
+European Union Directive 95/46/EC
+The European Union (EU), as a collective administrative and economic body, has always attempted to ensure that member states adhere to common standards where it applies to human rights, privacy, and the application of laws to individual citizens. As the Internet developed, many EU member nations began to adopt their own standards for privacy and personal data handling. The European Union Directive 95/46/EC published in 1995 was an attempt to provide direction for these nations on how to properly handle personal data. Specifically, the directive deals with “the protection of individuals with regard to the processing of personal data and on the free movement of such data”. 
+Prior to this directive, the Organisation for Economic Co-operation and Development (OECD) had published its “Recommendations of the Council Concerning Guidelines Governing the Protection of Privacy and Trans-Border Flows of Personal Data” in 1980. This documented seven principles for protecting personal data (Appendix A). The EU directive incorporated all of these principles without modification. 
+As a member nation of the EU, businesses operating in the United Kingdom are certainly within the scope of this directive. However, as a directive (as opposed to a regulation), 95/46/EC is open to interpretation by each country in the European Union. All member states had to enact their own laws that would put them in compliance with the directive. The United Kingdom has implemented it's data protection laws in the Data Protection Act of 1998.
 
+United Kingdom's Data Protection Act of 1998
+While some European Union member states copied the EU Data Protection Directive verbatim, the United Kingdom determined it's own interpretation of the directive. This interpretation has been put into law in the form of the Data Protection Act of 1998. 
 
+Freedom of Information Act 2000
+The specific need for this and why it pertains to the above.
 
+Payment Card Industry DSS
+What is it? Why is it applicable here?
 
-
-
-
-
-
-
-Data Protection Implications for a UK High Street Business with an Internet Sales Presence
-
-
-Security, Audit, and Compliance
-INF11109 2014-6 TR1 001
-Coursework 1
-
-Matriculation Number: 40185332
-
-Date: 16/10/15
-Word Count: 273
-
-Executive Summary
-150-200 words outlining the contents of the report
-
-Table of Contents
-Executive Summary	2
-Introduction	4
-Background	4
-Discussion and Analysis	4
-Conclusions and Limitations of Work	4
-References	5
-
-
-Introduction
-Giving an overview of the aim and scope of the paper and making it clear which business sector you have selected
-1) Talk about retail businesses, customers and their data. Sales data, inventory. Other concerns for businesses that also operate sales online, international, data cross-over. Lead to UK DPA, EU data protection directives, international laws for internet sales
-2) The notions in the DPA and EU DPD as they relate to retail, safe harbour and the like as they relate to internet sales
-3) The aim of this paper is to discuss the laws that pertain to this business, their implications for working within the laws, their enforcement, and the outcomes of following them or not (punishments)
-
-Background
-Covering the history and motivations behind data protection law and an overview of the factors relevant to the sector you have chosen
-
-Discussion and Analysis
-including an overview of how data protection law has been applied in the sector, the detailed evaluation of impact of data protection law on the sector, implications for security policies and possible future developments in the area
-
-Conclusions and Limitations of Work
-The limitations section should include consideration of the effectiveness of the research approach you used
-
-References
-APA style, in-line citations as (Smith, 2009)
+General Data Protection Regulation
+Where this comes into play… what is it's main 
