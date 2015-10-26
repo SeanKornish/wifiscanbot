@@ -1,16 +1,123 @@
+
+
+
+
+
+
+
+
+
+
+Data Protection Implications for a UK High Street Business with an Internet Sales Presence
+
+
+Security, Audit, and Compliance
+INF11109 2014-6 TR1 001
+Coursework 1
+
+Matriculation Number: 40185332
+
+Date: 16/10/15
+Word Count: 2935
+
+Executive Summary
+150-200 words outlining the contents of the report
+
+Table of Contents
+Executive Summary	2
+Introduction	4
+Background	4
+European Union Directive 95/46/EC	4
+United Kingdom's Data Protection Act of 1998	5
+Privacy and Electronic Communications Regulations (PECR)	5
+Freedom of Information Act 2000	6
+European Union General Data Protection Regulation	6
+Payment Card Industry Data Security Standard (PCI-DSS)	6
+Discussion and Analysis	7
+Overview	7
+Business Impact	7
+Information Security Impact	7
+Future Developments	7
+Conclusions and Limitations of Work	8
+Conclusion	8
+Limitations of Work	8
+References	9
+Appendix A – OECD Principles	10
+Appendix B – DPA 98 Rules	10
+
+
+Introduction
+All modern businesses are in some way dealing with data. Be it in the form of inventory, sales, or customer data; most businesses cannot operate without data. In fact, the current age is collectively called the Information Age. The advent of computers and their connected platform, the Internet, has further enshrined the importance of data within businesses. It is important then for all businesses, regardless of location or industry, to be concerned with the acquisition, management, and use of this data. This business brief is specific to a high-street retail business operating in the United Kingdom, but it could apply to many others. The Internet has opened up additional avenues for retail, so there will also be consideration given to data issues that derive from online sales.
+Governments, businesses, and individuals all have concerns for the management of this data. In some ways these concerns overlap, but they can also be contradictory to each other. For example, a business wants to improve sales so it markets to existing customers, but the individuals want to retain personal privacy, so they don't wish to be marketed to in this way. Where these issues arise, it is up to the government to ultimately decide how data should be used, collected, and maintained. When those governmental rules prove insufficient, responsible companies tend to turn to trade organisations and industry standards. It is here in the nebulous area where personal privacy, corporate concerns, and governmental legislation all congregate that this brief will attempt to provide some insight.
+A UK-based retail business with Internet sales will at a minimum be compelled to comply with UK data protection laws, European Union directives, payment card industry standards, international data transfer rules, and consumer rights. The aim of this management brief is to discuss the laws that are applicable in this context, their implications, enforcement, and the outcomes of following these rules and the punishments for not.
+
+Background
 European Union Directive 95/46/EC
 The European Union (EU), as a collective administrative and economic body, has always attempted to ensure that member states adhere to common standards where it applies to human rights, privacy, and the application of laws to individual citizens. As the Internet developed, many EU member nations began to adopt their own standards for privacy and personal data handling. The European Union Directive 95/46/EC published in 1995 was an attempt to provide direction for these nations on how to properly handle personal data. Specifically, the directive deals with “the protection of individuals with regard to the processing of personal data and on the free movement of such data”. 
 Prior to this directive, the Organisation for Economic Co-operation and Development (OECD) had published its “Recommendations of the Council Concerning Guidelines Governing the Protection of Privacy and Trans-Border Flows of Personal Data” in 1980. This documented seven principles for protecting personal data (Appendix A). The EU directive incorporated all of these principles without modification. 
 As a member nation of the EU, businesses operating in the United Kingdom are certainly within the scope of this directive. However, as a directive (as opposed to a regulation), 95/46/EC is open to interpretation by each country in the European Union. All member states had to enact their own laws that would put them in compliance with the directive. The United Kingdom has implemented it's data protection laws in the Data Protection Act of 1998.
-
 United Kingdom's Data Protection Act of 1998
-While some European Union member states copied the EU Data Protection Directive verbatim, the United Kingdom determined it's own interpretation of the directive. This interpretation has been put into law in the form of the Data Protection Act of 1998. This act replaced an earlier UK law, the Data Protection Act of 1984. In the 1998 version, much of the focus is on the handling and processing of personal data. Personal data, in the scope of this law, is defined as data that can be used to personally identify a living person. This means that anonymised data or data that is grouped together without personal identifiers is out of scope for this law. 
-
+While some European Union member states copied the EU Data Protection Directive verbatim, the United Kingdom determined it's own interpretation of the directive. This interpretation has been put into law in the form of the Data Protection Act of 1998. This act replaced an earlier UK law, the Data Protection Act of 1984. In the 1998 version, much of the focus is on the handling and processing of personal data and specifically how that data is stored. 
+Personal data, in the scope of this law, is defined as data that can be used to personally identify a living person. This means that anonymised data or data that is grouped together without personal identifiers is out of scope for this law. Broadly, the Act sets out rules and responsibilities for companies that collect personal data while also providing certain rights to individuals with regards to their own information. The individual must consent to having the information collected in the first place and the collecting organisation must abide by the rules set out in accordance with the Act (See Appendix B).
+As this Act is a very broad piece of legislation and contains many principles, rules, and caveats, there are some complications in how it is understood by businesses and individuals alike. Some of this has to do with the interpretations of the terminology, such as the definition of personal data; what is included in the definition and what is not. Other complications arise from technical capabilities such as the ability to store data or the way in which that data is processed; such as computer hard drive backups. Fortunately, there is a regulatory body established in the United Kingdom that provides guidance to the Act and is the primary regulator for it, the Information Commissioner’s Office (ICO).
+Privacy and Electronic Communications Regulations (PECR)
+The Information Commissioner's Office (ICO) created the PECR to address the concerns that individuals and businesses have on privacy and communication. PECR is the United Kingdom's implementation of the European Directive 2002/58/EC, which is known as the “e-privacy Directive”. It builds upon the information and lessons learned from the Data Protection Act and EU 95/46/EC.
+It provides guidance and rules around marketing communication, internet and data security, profiling and tracking, and maintaining customer privacy. Some specific areas covered in this regulation that were not directly covered in the Data Protection Act are Internet cookie laws, digital mobile networks and GPS, security breaches and data loss, and electronic marketing.
+Much of the additional regulation in the PECR is meant to sit alongside the DPA. As such there are areas that overlap and others that are uniquely covered by one or the other. There are a few amendments to be concerned with , such as the Freedom of Information Act, but these two regulations cover the bulk of the United Kingdom's data laws.
 Freedom of Information Act 2000
-The specific need for this and why it pertains to the above.
+The Data Protection Act and Privacy and Electronic Communication Regulations provide many rules and processes for businesses and governments to follow with regard to personal data. These also lay out rights for the individual's data. However, there was nothing defined in these laws that allowed the individual to inspect what data was actually being stored and processed by the organisations.
+The Freedom of Information Act of 2000 was developed to address this concern. It provided a mechanism for anyone to request access to the information held about them from a public company or government body. This right to access the information held had been only seen as a voluntary process before the introduction of this Act. There are of course exceptions to what can be accessed and when, but the general framework to allow an individual to inspect what data is stored on them has greatly improved the ability for personal privacy to be inspected at an individual level.
+European Union General Data Protection Regulation
+Even when looking at just the United Kingdom, it is obvious that data protection law is very complex. Many laws and regulations tend to overlap in scope and jurisdiction. Multiple EU directives are translated into multiple laws at the national level and as the Internet provides a cross-border service for business, these national laws can also contradict each other and cause additional complexity. To combat this complexity and bring data protection law under a single, common concern within the European Union, the European Commission is planning to unify data protection with the General Data Protection Regulation.
+The proposal for the regulation was introduced in early 2012 and it expands upon the EU 95/46/EC directive. As a regulation, it will apply to all EU member nations and effectively overrule any localised data protection laws without the nation needing to enable any additional legislation. While still being negotiated, it is likely that this regulation will be put into place by the year 2017.
+Payment Card Industry Data Security Standard (PCI-DSS)
+In addition to the governmental legislation on data protection in the United Kingdom and European Union, organisations are also expected to abide by industry specific standards that pertain to their business. In the retail and online sales world, a large industry group is the payment card industry. 
+The major credit card companies that comprise the payment card industry (Visa, MasterCard, American Express, Discover, and JCB) had all developed their own programs to help combat credit card fraud by ensuring merchants were implementing appropriate security measures. Realising that they all held common goals, these companies formed the Payment Card Industry Security Standard Council (PCI SSC). This organisation eventually established in 2004 a working standard that all merchants using payment cards would need to adhere to, the Payment Card Industry Data Security Standard (PCI-DSS).
+PCI-DSS defines six “control objectives” that a company must implement in order to process payment cards. The organisation itself maintains the regulations and penalties for companies that it finds are in breach of the rules. This has led to some controversy in businesses, as it is not a governmentally controlled scheme, but it still holds power regardless.
+Discussion and Analysis
+Overview
+As a retail business operating in the United Kingdom, there are a multitude of data protection rules to be concerned with including EU, UK, and industry regulations. The scope is further expanded when online sales are taken into account. Customer data, information about sales, physical security within the retail stores, marketing communication, international transfer of data for online sales, and information security are all an interest for the business.
+Business Impact
+the detailed evaluation of impact of data protection law on the sector, including enforcement and penalties (use recent stories of fines, etc.)
+Information Security Impact
+Certainly them more information that a business collects on its customers, the more valuable that information becomes to would-be attackers. Personal information can be used in identity theft, can be sold on the black market, and can generally be used to cause problems and disruptions to individuals. (site stories) 
+Retail businesses are also a target due to the large amount of payment card details that tend to be collected. (POS story)
+Once sales move to an online environment, the potential for attack becomes even greater. An attacker no longer needs to physically access the Point of Sale systems or pilfer personal information from a trash can. They can anonymously and remotely attack the Internet facing servers that customers use. This can be done from any where in the world and in some cases, from countries that have much less stringent data protection laws.
+Future Developments
+The pace of technology development means that all of the business concerns around data protection and privacy will change very quickly. There are already a variety of technologies on the horizon that will begin to make a tangible impact on the way organisations handle and process data. Emerging technologies like Big Data, RFID tags, and mobile or contactless payments are providing new ways to look at customers and their information, but due care and diligence should be taken when adopting these new practises as the legislation is only fledgling.
+All of the information systems that are used today collect data. Traditionally, this data has been stored in fairly well-structured and organised data stores or databases. This has made it quite easy to handle and manage the data in a limited scale. Modern information systems are collecting even more information and this is sometimes stored in unstructured ways across a whole range of storage mediums. This is what is called Big Data, the collection of all of the information across all of the systems that can be processed and interpreted in new ways. Things like photos, videos, “tags”, location information, and other seemingly disconnected data can now be data mined for additional insight into individual's behaviour. When only concerned with names and addresses, it is quite easy to understand what is personally identifiable information. If Big Data is taken into context, the distinction becomes much more hazy. Aggregation and processing of certain non-personal information can lead to a very specific profile, even when it is done on anonymous data. Organisations should take care when attempting to draw new insights about their customers using Big Data as it is a legal grey area. Legislation on the mining of this data will likely be developed very soon.
+Radio Frequency Identifiers (RFIDs) are small electronic tags that can be placed onto articles of clothing, consumer goods, and even into plastic cards for passports or door access. Some retail companies are starting to use these tags to monitor stock levels and prevent fraud. The tags themselves broadcast a tiny radio signal that can be picked up by arbitrary hardware. There is a potential for the tag signal to be misused to track individuals or monitor them without consent, as they are inconspicuous and easy to overlook. Any business wishing to use RFID tags for stock monitoring should consider the need as they could potentially be violating an individual's personal privacy.
+Most UK consumers carry a smart phone (need stat) and a great majority also carry a credit or debit card (need stat). These two seemingly separate technologies are both being used to smooth sales processing in retail shops by not requiring any direct exchange of data. In the case of smart phones, mobile payments allow a customer to send a payment directly to the retailer without exchanging any physical money or credit card details. For the debit and credit cards, there is a new payment method known as “contactless” where a small RFID chip in the credit card is scanned by a retailer's payment card machine and the information to process the transaction is read “through the air”. While both of these technologies have been shown to improve the speed and efficiency of retail payments, they also bring additional privacy and security concerns. (quote from story) A retail business should take these concerns on-board when deciding to implement these emerging payment technologies.
 
-Payment Card Industry DSS
-What is it? Why is it applicable here?
+Conclusions and Limitations of Work
+Conclusion
+Wrap up the concerns the business should have
+Limitations of Work
+The limitations section should include consideration of the effectiveness of the research approach you used
 
-General Data Protection Regulation
-Where this comes into play… what is it's main 
+References
+APA style, in-line citations as (Smith, 2009)
+
+
+Appendix A – OECD Principles
+Seven personal data principles introduced by the Organisation for Economic Cooperation and Development (OECD).
+1. Notice—data subjects should be given notice when their data is being collected
+2. Purpose—data should only be used for the purpose stated and not for any other purposes
+3. Consent—data should not be disclosed without the data subject’s consent
+4. Security—collected data should be kept secure from any potential abuses
+5. Disclosure—data subjects should be informed as to who is collecting their data
+6. Access—data subjects should be allowed to access their data and make corrections to any inaccurate data
+7. Accountability—data subjects should have a method available to them to hold data collectors accountable for not following the above principles
+
+Appendix B – DPA 98 Rules
+Schedule 1 of the Data Protection Act of 1998 lists the primary principles that apply to the Act.
+1. Personal data shall be processed fairly and lawfully and, in particular, shall not be processed unless - 
+a) at least one of the conditions in Schedule 2 is met, and
+b) in the case of sensitive personal data, at least one of the conditions in Schedule 3 is also met.
+2. Personal data shall be obtained only for one or more specified and lawful purposes, and shall not be further processed in any manner incompatible with that purpose or those purposes.
+3. Personal data shall be adequate, relevant and not excessive in relation to the purpose or purposes for which they are processed.
+4. Personal data shall be accurate and, where necessary, kept up to date.
+5. Personal data processed for any purpose or purposes shall not be kept for longer than is necessary for that purpose or those purposes.
+6. Personal data shall be processed in accordance with the rights of data subjects under this Act.
+7. Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data.
+8. Personal data shall not be transferred to a country or territory outside the European Economic Area unless that country or territory ensures an adequate level of protection for the rights and freedoms of data subjects in relation to the processing of personal data.
