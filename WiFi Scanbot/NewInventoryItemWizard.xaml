@@ -1,0 +1,94 @@
+<Window x:Class="Pellicom.NewInventoryItemWizard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterOwner"
+        Title="NewInventoryItemWizard"
+        Width="500" Height="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="10, 10, 0, 0">
+                <TextBlock Text="Item Code" Width="150"></TextBlock>
+                <TextBlock Text="150 - 4015" Width="150"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 10, 0, 0">
+                <TextBlock Text="Category: " Width="150"></TextBlock>
+                <ComboBox Name="addItemCategory" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="SubCategory: " Width="150"></TextBlock>
+                <ComboBox Name="addItemSubCategory" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 15, 0, 0">
+                <TextBlock Text="Brand: " Width="150"></TextBlock>
+                <ComboBox Name="addItemBrand" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Supplier: " Width="150"></TextBlock>
+                <ComboBox Name="addItemSupplier" Width="150"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 15, 0, 0">
+                <TextBlock Text="Item Name: " Width="150"></TextBlock>
+                <TextBox Name="addItemName" Width="250"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Item Title: " Width="150"></TextBlock>
+                <TextBox Name="addItemTitle" Width="250" IsEnabled="False"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 15, 0, 0">
+                <TextBlock Text="Bar Code: " Width="150"></TextBlock>
+                <TextBox Name="addItemBarCode" Width="150"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="M.P. Number: " Width="150"></TextBlock>
+                <TextBox Name="addItemMPNo" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Product Code: " Width="150"></TextBlock>
+                <TextBox Name="addItemProductCode" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 15, 0, 0">
+                <TextBlock Text="Quantity in Stock: " Width="150"></TextBlock>
+                <TextBox Name="addItemQtyInStk" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Minimum Quantity: " Width="150"></TextBlock>
+                <TextBox Name="addItemMinQty" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 15, 0, 0">
+                <TextBlock Text="Weight (g): " Width="150"></TextBlock>
+                <TextBox Name="addItemWeight" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Dimensions (cm): " Width="150"></TextBlock>
+                <TextBox Name="addItemDimension" Width="150"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Postage (UK): " Width="150"></TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox Name="addItemPostageType" Width="150"></ComboBox>
+                    <TextBox Name="addItemPostage" Margin="5,0,0,0" Width="50"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Price: " Width="150"></TextBlock>
+                <TextBox Name="addItemPrice" Width="75"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10, 5, 0, 0">
+                <TextBlock Text="Location: " Width="150"></TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox Name="addItemLocationA" Width="75"></ComboBox>
+                    <ComboBox Name="addItemLocationB" Width="75" Margin="5,0,0,0"></ComboBox>
+                    <ComboBox Name="addItemLocationC" Width="75" Margin="5,0,0,0"></ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,0,0,10" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Save Item Details" Width="125" Margin="0,0,10,0"></Button>
+            <Button Content="Add Web Info" Width="100"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
