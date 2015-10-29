@@ -1,0 +1,423 @@
+<Window x:Class="Pellicom.MainWindow"
+        
+        BorderThickness="0"        
+        Icon="Images/Logo.ico"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
+        Title="Pellicom Pro"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Background="LightSkyBlue" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Source="Images/Logo.png" Height="32" Width="32" Margin="2" />
+            <Label Grid.Column="1"></Label>
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Height="32" Margin="2">
+                <StackPanel Orientation="Horizontal" Margin="2">
+                    <Label Content="Pellicom Demo System"></Label>
+                    <Label Content="|"></Label>
+                    <xctk:DropDownButton x:Name="_dropDownButton"
+                              HorizontalAlignment="Left"
+                              Content="Administrator"
+                              Height="22"
+                              Width="150">
+                        <xctk:DropDownButton.DropDownContent>
+                            <StackPanel>
+                                <Button Content="Change Password" Width="125"></Button>
+                                <Button Content="Logout" Width="125"></Button>
+                            </StackPanel>
+                        </xctk:DropDownButton.DropDownContent>
+                    </xctk:DropDownButton>
+                </StackPanel>
+                <Button x:Name="CloseButton" Margin="15,0,0,0" Click="CloseButton_Click" Height="22" Width="22">
+                    <Image Source="Images/logout.png" Height="16" Width="16" ></Image>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <xcad:DockingManager Grid.Row="1" AllowMixedOrientation="True">
+            <xcad:DockingManager.Theme>
+                <xcad:AeroTheme/>
+            </xcad:DockingManager.Theme>
+            <xcad:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding IconSource}" Margin="0,0,4,0"/>
+                        <TextBlock Text="{Binding Title}" />
+                    </StackPanel>
+                </DataTemplate>
+            </xcad:DockingManager.DocumentHeaderTemplate>
+            <xcad:LayoutRoot x:Name="_layoutRoot">
+                <xcad:LayoutPanel Orientation="Horizontal">
+                    <xcad:LayoutDocumentPaneGroup >
+                        <xcad:LayoutDocumentPane>
+                            <xcad:LayoutDocument ContentId="document1" Title="Home     " IconSource="Images/home.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="Show Dashboard" Name="showDashboard" Click="showDashboard_Click">
+                                                <Image Source="Images/home.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Inventory     " IconSource="Images/inventory.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="New Item" Name="newItem" Click="newItem_Click">
+                                                <Image Source="Images/new_item.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Manage Inventory" Name="manageInventory" Click="manageInventory_Click">
+                                                <Image Source="Images/manage_inventory.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Inventory Reports" Name="inventoryReports" Click="inventoryReports_Click">
+                                                <Image Source="Images/inventory_reports.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Print Stock Stickers" Name="printStockStickers" Click="printStockStickers_Click">
+                                                <Image Source="Images/print_stock_stickers.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Listings     " IconSource="Images/listings.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="New Listing" Name="newListing" Click="newListing_Click">
+                                                <Image Source="Images/new_listing.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Edit Listings" Name="editListings" Click="editListings_Click">
+                                                <Image Source="Images/edit_listing.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Sales     " IconSource="Images/sales.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="Process Orders" Name="processOrders" Click="processOrders_Click">
+                                                <Image Source="Images/process_orders.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Edit Orders" Name="editOrders" Click="editOrders_Click">
+                                                <Image Source="Images/edit_orders.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Manage Returns" Name="manageReturns" Click="manageReturns_Click">
+                                                <Image Source="Images/manage_returns.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Sales Reports" Name="salesReports" Click="salesReports_Click">
+                                                <Image Source="Images/sales_reports.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Reports     " IconSource="Images/reports.png" CanClose="False" >
+                                <DockPanel>
+                                    <StackPanel Orientation="Horizontal" Height="32">
+                                        <Label Content="Select Report:" Margin="2"></Label>
+                                        <ComboBox SelectedIndex="0" Height="24">
+                                            <Label Content="Catalog"></Label>
+                                            <Label Content="Stock Report"></Label>
+                                        </ComboBox>
+                                        <Button Content="Run Report" Width="100"  Height="24" Margin="20,0,0,0" Name="runReport" Click="runReport_Click"></Button>
+                                    </StackPanel>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Tools     " IconSource="Images/tools.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="Message Board" Name="showMessageBoard" Click="showMessageBoard_Click">
+                                                <Image Source="Images/message_board.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Generate Bar Codes" Name="genBarCodes" Click="genBarCodes_Click">
+                                                <Image Source="Images/generate_barcodes.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Royal Mail Calculator" Name="showRoyalMailCalc" Click="showRoyalMailCalc_Click">
+                                                <Image Source="Images/royal_mail_calc.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Standard Tariff" Name="showStandardTariff" Click="showStandardTariff_Click">
+                                                <Image Source="Images/standard_tariff.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Postal Data" Name="postalData" Click="postalData_Click">
+                                                <Image Source="Images/postal_data.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                            <xcad:LayoutDocument ContentId="document2" Title="Admin     " IconSource="Images/admin.png" CanClose="False" >
+                                <DockPanel>
+                                    <ToolBarTray DockPanel.Dock="Top" Background="Azure">
+                                        <ToolBar ToolBarTray.IsLocked="True" Background="Azure" >
+                                            <Button ToolTip="User Administrator" Name="userAdmin" Click="userAdmin_Click">
+                                                <Image Source="Images/user_admin.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                            <Button ToolTip="Manage System Data" Name="manageSystemData" Click="manageSystemData_Click">
+                                                <Image Source="Images/manage_data.png" Height="32" Width="32"></Image>
+                                            </Button>
+                                        </ToolBar>
+                                    </ToolBarTray>
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                    </xcad:LayoutDocumentPaneGroup >
+                </xcad:LayoutPanel>
+            </xcad:LayoutRoot>
+        </xcad:DockingManager>
+
+        <xcad:DockingManager Grid.Row="2" AllowMixedOrientation="True" Name="dockingContentWindow">
+            <xcad:DockingManager.Theme>
+                <xcad:AeroTheme/>
+            </xcad:DockingManager.Theme>
+            <xcad:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" />
+                    </StackPanel>
+                </DataTemplate>
+            </xcad:DockingManager.DocumentHeaderTemplate>
+            <xcad:LayoutRoot x:Name="_layoutContent">
+                <xcad:LayoutPanel Orientation="Horizontal">
+                    <xcad:LayoutDocumentPaneGroup >
+                        <xcad:LayoutDocumentPane>
+                            <xcad:LayoutDocument ContentId="dashboard" Title="Dashboard">
+                                <DockPanel>
+                                    <Grid>
+                                        <Grid.Background>
+                                            <ImageBrush ImageSource="/Images/bg.jpg"/>
+                                        </Grid.Background>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="1"  Margin="0, 0, 10, 20" Width="400">
+                                            <Border CornerRadius="10" BorderBrush="#58290A" BorderThickness="2" Background="LightBlue">
+                                                <StackPanel Orientation="Vertical"  Margin="10">
+                                                    <TextBlock FontSize="25" Margin="0,10,0,0" TextWrapping="Wrap">Recent Activity</TextBlock>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0" >
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="75" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Border BorderBrush="#58290A" BorderThickness="1" Margin="2" Width="64" Height="64" >
+                                                                <Image Margin="1" Source="Images/inventory/helicopter.jpg" ></Image>
+                                                            </Border>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Helicopter Toy</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Red helicopter with remote.</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Stock: 200</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap" Foreground="Green" >New Sale</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="75" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Border BorderBrush="#58290A" BorderThickness="1" Margin="2" Width="64" Height="64" >
+                                                                <Image Margin="1" Source="Images/inventory/helicopter.jpg"></Image>
+                                                            </Border>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Helicopter Toy</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Red helicopter with remote.</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Stock: 200</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap" Foreground="Blue" >New Product</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="75" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Border BorderBrush="#58290A" BorderThickness="1" Margin="2" Width="64" Height="64" >
+                                                                <Image Margin="1" Source="Images/inventory/helicopter.jpg"></Image>
+                                                            </Border>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Helicopter Toy</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Red helicopter with remote.</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Stock: 200</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap" Foreground="Red" >Stock Alert</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="75" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Border BorderBrush="#58290A" BorderThickness="1" Margin="2" Width="64" Height="64" >
+                                                                <Image Margin="1" Source="Images/inventory/helicopter.jpg"></Image>
+                                                            </Border>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Helicopter Toy</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Red helicopter with remote.</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Stock: 200</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap" Foreground="Green" >New Sale</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                </StackPanel>
+                                            </Border>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="2" Margin="10, 0, 0, 20" Width="400">
+                                            <Border CornerRadius="10" BorderBrush="#58290A" BorderThickness="2" Background="LightBlue">
+                                                <StackPanel Orientation="Vertical" Margin="10">
+                                                    <TextBlock FontSize="25" Margin="0,10,0,0" TextWrapping="Wrap">Messages</TextBlock>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Contact Request</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Please contact Joe Bloggs in reference to the new helicopters. 01411231234</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Contact Request</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Please contact Joe Bloggs in reference to the new helicopters. 01411231234</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Contact Request</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Please contact Joe Bloggs in reference to the new helicopters. 01411231234</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border BorderBrush="#58290A" BorderThickness="2" Margin="0,10,0,0">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect/>
+                                                        </Border.Effect>
+                                                        <Grid Background="White">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="75" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
+                                                                <TextBlock Margin="2" FontSize="18" TextWrapping="Wrap">Contact Request</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">Please contact Joe Bloggs in reference to the new helicopters. 01411231234</TextBlock>
+                                                            </StackPanel>
+                                                            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Bottom">
+                                                                <TextBlock Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">16:28:34</TextBlock>
+                                                                <TextBlock Margin="2" TextWrapping="Wrap">18/10/2015</TextBlock>
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Border>
+                                                </StackPanel>
+                                            </Border>
+                                        </StackPanel>
+                                    </Grid>
+
+                                </DockPanel>
+                            </xcad:LayoutDocument>
+                        </xcad:LayoutDocumentPane>
+                    </xcad:LayoutDocumentPaneGroup >
+                </xcad:LayoutPanel>
+            </xcad:LayoutRoot>
+        </xcad:DockingManager>
+    </Grid>
+</Window>
